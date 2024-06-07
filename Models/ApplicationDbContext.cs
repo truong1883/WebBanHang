@@ -14,12 +14,12 @@ namespace WedBanHang.Models
         public DbSet<Product> Products { set; get; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //seed data to table Categories
+            //seed data to table Categories<>
             modelBuilder.Entity<Category>().HasData(
             new Category { Id = 1, Name = "Điện thoại", DisplayOrder = 1 },
             new Category { Id = 2, Name = "Máy tính bảng", DisplayOrder = 2 },
             new Category { Id = 3, Name = "Laptop", DisplayOrder = 3 });
-            //seed data to table Product
+            //seed data to table Product<>
             modelBuilder.Entity<Product>().HasData(
             new Product { Id = 1, Name = "Iphone 7", Price = 300, CategoryId = 1 },
             new Product { Id = 2, Name = "Iphone 7s", Price = 350, CategoryId = 1 },
