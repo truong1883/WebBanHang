@@ -20,7 +20,7 @@ namespace WedBanHang.Controllers
             var listCategory = _db.Categories.ToList();
             return View(listCategory);
         }
-        //Hiển thị form thêm mới chủng loại
+        //Hiển thị form thêm mới chủng loại<>
         public IActionResult Add()
         {
             return View();
